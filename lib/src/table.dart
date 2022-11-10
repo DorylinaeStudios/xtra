@@ -1,5 +1,11 @@
 import 'column.dart';
 
 class Table {
-    Table() {}
+    late String _tableName;
+
+    List<Column> columns = [];
+
+    Table(String tableName) {
+        this._tableName = tableName;
+    }
 }

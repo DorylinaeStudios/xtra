@@ -3,7 +3,6 @@ import 'table.dart';
 
 class Column<T> {
     // required //
-    late Table _table;
     late String _columnName;
 
 
@@ -19,7 +18,6 @@ class Column<T> {
 
     Column(
         // required
-        Table table,
         String columnName,
 
         // optional
@@ -31,7 +29,6 @@ class Column<T> {
             int autoIncStep = 1,
         }) {
         
-        this._table = table;
         this._columnName = columnName;
         
         this._autoInc = autoInc;
