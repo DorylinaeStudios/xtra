@@ -2,16 +2,24 @@ import 'table.dart';
 import 'column.dart';
 
 class Collection<T> {
-    List<T> collection = [];
+    List<T> _collection = [];
 
-    operator [](int index) => collection[index];
+    operator [](int index) => _collection[index];
 
     operator []=(int index, T value) {
-        collection[index] = value;
+        _collection[index] = value;
     }
 
     void add(T value) {
-        collection.add(value);
+        _collection.add(value);
+    }
+
+    T last() {
+        return _collection[_collection.length -1];
+    }
+
+    int get length {
+        return _collection.length;
     }
 
     Collection (){}
