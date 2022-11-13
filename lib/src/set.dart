@@ -1,11 +1,11 @@
-import 'column.dart';
+import 'table.dart';
 
 class Set {
-    late String _setName;
+  late String _setName;
 
-    List<Table> tables = [];
+  List<Table> tables = [];
 
-    Table(String setName) {
-        this._setName = setName;
-    }
+  Set(String setName) {
+    this._setName = setName;
+  }
 }

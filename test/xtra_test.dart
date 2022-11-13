@@ -4,22 +4,14 @@ import 'package:test/test.dart';
 void main() {
   group('A group of tests', () {
     test('Test', () {
-      Column<int> autoIncColumn = Column<int>("AutoIncColumn", autoInc : true);
+      Table table = Table("MyTable");
+      Column autoInc = table.addColumn("AutoIncColumn", autoInc: true);
+      Column stringBased = table.addColumn("StringBasedColumn");
 
-      autoIncColumn.add();
-      autoIncColumn.add();
-      expect(autoIncColumn[1], 1); // returns 1
+      table.addRow({"StringBasedColumn": "Hello"});
 
-      Column<String> stringBasedColumn = Column<String>("StringBasedColumn");
-
-      stringBasedColumn.add("test");
-      expect(stringBasedColumn[0], "test");
-
-      stringBasedColumn[0] = "test 2";
-      expect(stringBasedColumn[0], "test 2");
-
-      stringBasedColumn.add("test");
-      expect(stringBasedColumn[1], "test");
+      print(table.rows[0]["AutoIncColumn"]);
+      print(table.rows[0]["StringBasedColumn"]);
     });
   });
 }

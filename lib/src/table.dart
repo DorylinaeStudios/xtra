@@ -1,51 +1,43 @@
+import 'column_collection.dart';
 import 'column.dart';
 import 'row.dart';
+import 'row_collection.dart';
 
 class Table {
-    late String _tableName;
+  late String _tableName;
 
-    List<Column> columns = [];
-    List<Row> rows = [];
+  ColumnCollection columns = ColumnCollection();
+  RowCollection rows = RowCollection();
 
-    Table(
-        String tableName
-        ) {
-        
-        this._tableName = tableName;
-    }
+  Table(String tableName) {
+    this._tableName = tableName;
+  }
 
-    Column addColumn(
-        String columnName,
+  void addColumn(
+    String columnName,
+    Type type,
+    // optional
+    {
+    bool allowNull = false,
+    bool autoInc = false,
+    int autoIncSeed = 0,
+    int autoIncStep = 1,
+  }) {
+    Column column = Column(
+      this,
+      columnName,
+      autoInc: autoInc,
+      autoIncSeed: autoIncSeed,
+      autoIncStep: autoIncStep,
+    );
 
-        // optional
-        {
-            bool allowNull = false,
+    columns.add(column);
+  }
 
-            bool autoInc = false,
-            int autoIncSeed = 0,
-            int autoIncStep = 1,
-        }) {
-        
-        Column column = Column(
-            this,
-            columnName,
-            allowNull : false,
-            autoInc : false,
-            autoIncSeed : 0,
-            autoIncStep : 1,
-            );
+  Row addRow(Map<String, dynamic> entries) {
+    Row row = Row(this, rows.length, columns, entries);
 
-        columns.add(column);
-
-        return column;
-    }
-
-    Row addRow() {
-        Row row = Row(
-            this,
-            rows.length,
-            columns,
-            );
-        return row;
-    }
+    rows.add(row);
+    return row;
+  }
 }
