@@ -5,13 +5,23 @@ void main() {
   group('A group of tests', () {
     test('Test', () {
       Table table = Table("MyTable");
-      Column autoInc = table.addColumn("AutoIncColumn", autoInc: true);
-      Column stringBased = table.addColumn("StringBasedColumn");
 
-      table.addRow({"StringBasedColumn": "Hello"});
+      table.addColumn("Index", int, autoInc: true);
+      table.addColumn("First Name", String);
+      table.addColumn("Last Name", String);
+      table.addColumn("E-Mail", String);
 
-      print(table.rows[0]["AutoIncColumn"]);
-      print(table.rows[0]["StringBasedColumn"]);
+      table.addRow({
+        "First Name": "John",
+        "Last Name": "Doe",
+        "E-Mail": "johndoe@example.email"
+      });
+
+      table.addRow({
+        "First Name": "Jane",
+        "Last Name": "Doe",
+        "E-Mail": "janedoe@example.email"
+      });
     });
   });
 }

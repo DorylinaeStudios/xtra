@@ -24,6 +24,8 @@ void main() {
 
   print(table.rows[1]);
 
+  print(table.rows[0]["First Name"].runtimeType);
+
   print(table.rows[0]["First Name"]);
   print(table.rows[1]["First Name"]);
 
