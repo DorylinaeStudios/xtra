@@ -1,7 +1,10 @@
 name: xtra
-description: A dart package containing useful datatypes.
-version: 0.2.0
+description: >-
+  Some xtra useful datatypes, currently XTable and XSet, a set of XTables are usable.
+version: 0.2.1
 homepage: https://github.com/DorylinaeStudios/xtra
+repository: https://github.com/DorylinaeStudios/xtra
+issue_tracker: https://github.com/DorylinaeStudios/xtra/issues
 
 environment:
   sdk: '>=2.18.0 <3.0.0'

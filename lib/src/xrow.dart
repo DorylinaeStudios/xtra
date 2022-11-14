@@ -45,7 +45,7 @@ class XRow {
       text.add("$columnName: ${this[columnName]}");
     }
 
-    return "[ ${text.join(", ")} ]";
+    return "{${text.join(", ")}}";
   }
 
   // Gets data value stored in column. Allows: String var = row["column"];
