@@ -1,6 +1,9 @@
-[![Dart](https://github.com/DorylinaeStudios/xtra/actions/workflows/dart.yml/badge.svg?branch=alpha)](https://github.com/DorylinaeStudios/xtra/actions/workflows/dart.yml)[![Documentation Status](https://readthedocs.org/projects/xtra/badge/?version=latest)](https://xtra.readthedocs.io/en/latest/?badge=latest)
+[![Dart](https://github.com/DorylinaeStudios/xtra/actions/workflows/dart.yml/badge.svg?branch=alpha)](https://github.com/DorylinaeStudios/xtra/actions/workflows/dart.yml)
 
 Some xtra useful datatypes. Currently in development.
+
+Docs:
+https://pub.dev/documentation/xtra/latest/
 
 Implemented Datatypes:
 - XSet, emulates a database, holds collection of tables
