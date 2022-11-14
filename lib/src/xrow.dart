@@ -1,22 +1,26 @@
-import 'table.dart';
-import 'column_collection.dart';
-import 'column.dart';
+import 'xtable.dart';
+import 'xcolumn_collection.dart';
+import 'xcolumn.dart';
 
-class Row {
-  late Table _table;
+class XRow {
+  // required //
+  late XTable _table;
+  XTable get table => _table;
+
   late int _record;
+  int get record => _record;
 
-  late ColumnCollection _columns;
+  late XColumnCollection _columns;
 
-  Row(
-    Table table,
+  XRow(
+    XTable table,
     int record,
-    ColumnCollection columns,
+    XColumnCollection columns,
     Map<String, dynamic> entries,
   ) {
-    this._table = table;
-    this._record = record;
-    this._columns = columns;
+    _table = table;
+    _record = record;
+    _columns = columns;
 
     for (String columnName in _columns.names) {
       if (entries.containsKey(columnName)) {
@@ -46,11 +50,11 @@ class Row {
 
   // Gets data value stored in column. Allows: String var = row["column"];
   operator [](String columnName) {
-    Column column = _columns[columnName];
+    XColumn column = _columns[columnName];
     return column[_record];
   }
 
-  // Sets data value stored in column. this allows: row["column"] = "some object"
+  // XSets data value stored in column. this allows: row["column"] = "some object"
   operator []=(String columnName, dynamic value) {
     _columns[columnName][_record] = value;
   }

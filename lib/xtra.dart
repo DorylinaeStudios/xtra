@@ -3,10 +3,10 @@
 /// More dartdocs go here.
 library xtra;
 
-export 'src/column.dart';
-export 'src/row.dart';
-export 'src/table.dart';
-export 'src/collection.dart';
-export 'src/set.dart';
+export 'src/xcolumn.dart';
+export 'src/xrow.dart';
+export 'src/xtable.dart';
+export 'src/xcollection.dart';
+export 'src/xset.dart';
 
 // TODO: Export any libraries intended for clients of this package.

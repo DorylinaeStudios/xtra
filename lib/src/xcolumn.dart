@@ -1,10 +1,13 @@
-import 'collection.dart';
-import 'table.dart';
+import 'xcollection.dart';
+import 'xtable.dart';
 
-class Column<T> {
+class XColumn<T> {
   // required //
-  late Table _table;
+  late XTable _table;
+  XTable get table => _table;
+
   late String _columnName;
+  String get columnName => _columnName;
 
   // optional //
 
@@ -16,9 +19,9 @@ class Column<T> {
   // the data in the column
   late Collection _collection = Collection();
 
-  Column(
+  XColumn(
     // required
-    Table table,
+    XTable table,
     String columnName,
 
     // optional
@@ -27,17 +30,17 @@ class Column<T> {
     int autoIncSeed = 0,
     int autoIncStep = 1,
   }) {
-    this._table = table;
-    this._columnName = columnName;
+    _table = table;
+    _columnName = columnName;
 
-    this._autoInc = autoInc;
-    this._autoIncSeed = autoIncSeed;
-    this._autoIncStep = autoIncStep;
+    _autoInc = autoInc;
+    _autoIncSeed = autoIncSeed;
+    _autoIncStep = autoIncStep;
 
-    if (this._autoInc == true) {
+    if (_autoInc == true) {
       if (T != int && T != dynamic) {
         throw ArgumentError(
-            "Type is $T, not int or dynamic but autoInc is set to true");
+            "Type is $T, not int or dynamic but autoInc is xset to true");
       }
     }
   }
@@ -48,8 +51,6 @@ class Column<T> {
     _collection[index] = other;
   }
 
-  String get columnName => _columnName;
-
   bool get nullAllowed {
     if (_autoInc) {
       return true;
@@ -57,7 +58,7 @@ class Column<T> {
     return false;
   }
 
-  void add([T? value = null]) {
+  void add([T? value]) {
     if (_autoInc) {
       autoInc();
       return;
