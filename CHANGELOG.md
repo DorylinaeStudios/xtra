@@ -1,3 +1,8 @@
+## 0.2.3
+
+- Massive Refractoring
+- Documentation
+
 ## 0.2.2
 
 - Fix typo in readme

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 6.0.0">
+  <meta name="description" content="xtra API docs, for the Dart programming language.">
+  <title>xtra - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="" data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="https://github.com/DorylinaeStudios/xtra">xtra package</a></li>
+  </ol>
+  <div class="self-name">xtra</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <p>Some xtra useful datatypes. Currently in development.</p>
+<p>Implemented Datatypes:</p>
+<ul>
+<li>XSet, emulates a database, holds collection of tables</li>
+<li>XTable, emulates a database table</li>
+<li>XColumn, used by XTable to represent Columns</li>
+<li>XRow, used by XTable to represent Rows</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<pre class="language-dart"><code class="language-dart">XSet xSet = XSet("MyXSet");
+
+xSet.addXTable("MyXTable");
+
+xSet.tables["MyXTable"].addXColumn("Index", int, autoInc: true);
+xSet.tables["MyXTable"].addXColumn("First Name", String);
+xSet.tables["MyXTable"].addXColumn("Last Name", String);
+
+xSet.tables["MyXTable"].addXRow({"First Name": "John", "Last Name": "Doe"});
+
+print(xSet.tables["MyXTable"].rows[0]);
+</code></pre>
+<p>Output:
+<code>{Index: 0, First Name: John, Last Name: Doe}</code></p>
+<h2 id="additional-information">Additional information</h2>
+<p>Currently maintained by Dorylinae Studios™</p>
+<p>Contact: dorylinae.studios@gmail.com</p>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="xtra">
+  <span class="name"><a href="xtra/xtra-library.html">xtra</a></span> 
+
+</dt>
+<dd>Package containing useful data types.
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="https://github.com/DorylinaeStudios/xtra">xtra package</a></li>
+</ol>
+
+
+    <h5 class="hidden-xs"><span class="package-name">xtra</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="xtra/xtra-library.html">xtra</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    xtra
+      0.2.2
+  </span>
+
+  
+</footer>
+
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
