@@ -5,6 +5,7 @@ import 'row_collection.dart';
 
 class Table {
   late String _tableName;
+  String get tableName => _tableName;
 
   ColumnCollection columns = ColumnCollection();
   RowCollection rows = RowCollection();
