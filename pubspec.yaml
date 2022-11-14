@@ -1,7 +1,7 @@
 name: xtra
 description: A dart package containing useful datatypes.
 version: 0.2.0
-# homepage: https://www.example.com
+homepage: https://github.com/DorylinaeStudios/xtra
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
