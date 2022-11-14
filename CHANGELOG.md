@@ -1,3 +1,7 @@
+## 0.2.4
+
+- Documentation
+
 ## 0.2.3
 
 - Massive Refractoring
