@@ -1,3 +1,5 @@
+[![Dart](https://github.com/DorylinaeStudios/xtra/actions/workflows/dart.yml/badge.svg?branch=alpha)](https://github.com/DorylinaeStudios/xtra/actions/workflows/dart.yml)
+
 Some xtra useful datatypes. Currently in development.
 
 Implemented Datatypes:
