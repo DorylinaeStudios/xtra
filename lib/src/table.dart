@@ -36,6 +36,7 @@ class Table {
   }
 
   Row addRow(Map<String, dynamic> entries) {
+    // Creates a row at the end of the column
     Row row = Row(this, rows.length, columns, entries);
 
     rows.add(row);
