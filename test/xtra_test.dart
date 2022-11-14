@@ -4,24 +4,19 @@ import 'package:test/test.dart';
 void main() {
   group('A group of tests', () {
     test('Test', () {
-      XTable table = XTable("MyXTable");
+      XSet xSet = XSet("MyXSet");
 
-      table.addXColumn("Index", int, autoInc: true);
-      table.addXColumn("First Name", String);
-      table.addXColumn("Last Name", String);
-      table.addXColumn("E-Mail", String);
+      xSet.addXTable("MyXTable");
 
-      table.addXRow({
-        "First Name": "John",
-        "Last Name": "Doe",
-        "E-Mail": "johndoe@example.email"
-      });
+      xSet.xTables["MyXTable"].addXColumn("Index", int, autoInc: true);
+      xSet.xTables["MyXTable"].addXColumn("First Name", String);
+      xSet.xTables["MyXTable"].addXColumn("Last Name", String);
 
-      table.addXRow({
-        "First Name": "Jane",
-        "Last Name": "Doe",
-        "E-Mail": "janedoe@example.email"
-      });
+      xSet.xTables["MyXTable"]
+          .addXRow({"First Name": "John", "Last Name": "Doe"});
+
+      expect(xSet.xTables["MyXTable"].xRows[0].toString(),
+          "{Index: 0, First Name: John, Last Name: Doe}");
     });
   });
 }

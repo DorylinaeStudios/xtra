@@ -9,11 +9,11 @@ void simple() {
 
   xSet.addXTable("MyXTable");
 
-  xSet.tables["MyXTable"].addXColumn("Index", int, autoInc: true);
-  xSet.tables["MyXTable"].addXColumn("First Name", String);
-  xSet.tables["MyXTable"].addXColumn("Last Name", String);
+  xSet.xTables["MyXTable"].addXColumn("Index", int, autoInc: true);
+  xSet.xTables["MyXTable"].addXColumn("First Name", String);
+  xSet.xTables["MyXTable"].addXColumn("Last Name", String);
 
-  xSet.tables["MyXTable"].addXRow({"First Name": "John", "Last Name": "Doe"});
+  xSet.xTables["MyXTable"].addXRow({"First Name": "John", "Last Name": "Doe"});
 
-  print(xSet.tables["MyXTable"].rows[0]);
+  print(xSet.xTables["MyXTable"].xRows[0]);
 }
