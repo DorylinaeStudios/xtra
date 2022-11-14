@@ -37,9 +37,6 @@ class XRow {
 
   @override
   String toString() {
-    for (int i = 0; i < _columns.length; i++) {
-      String columnName = _columns.names[i];
-    }
     List<String> text = [];
     for (String columnName in _columns.names) {
       text.add("$columnName: ${this[columnName]}");
