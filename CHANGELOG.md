@@ -1,3 +1,12 @@
+## 0.2.6
+
+- Readme
+- Documentation
+
+## 0.2.5
+
+- Readme
+
 ## 0.2.4
 
 - Documentation
