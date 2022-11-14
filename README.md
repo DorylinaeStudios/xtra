@@ -1,4 +1,4 @@
-[![Dart](https://github.com/DorylinaeStudios/xtra/actions/workflows/dart.yml/badge.svg?branch=alpha)](https://github.com/DorylinaeStudios/xtra/actions/workflows/dart.yml)
+[![Dart](https://github.com/DorylinaeStudios/xtra/actions/workflows/dart.yml/badge.svg?branch=alpha)](https://github.com/DorylinaeStudios/xtra/actions/workflows/dart.yml)[![Documentation Status](https://readthedocs.org/projects/xtra/badge/?version=latest)](https://xtra.readthedocs.io/en/latest/?badge=latest)
 
 Some xtra useful datatypes. Currently in development.
 
