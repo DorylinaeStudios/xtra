@@ -58,7 +58,7 @@ class XColumn<T> {
     return false;
   }
 
-  void add([T? value = null]) {
+  void add([T? value]) {
     if (_autoInc) {
       autoInc();
       return;

@@ -1,11 +1,7 @@
 import 'xtable.dart';
 
 class XTableCollection {
-  late Map<String, XTable> _tables;
-
-  XTableCollection() {
-    _tables = <String, XTable>{};
-  }
+  final Map<String, XTable> _tables = <String, XTable>{};
 
   operator [](String columnName) {
     return _tables[columnName];

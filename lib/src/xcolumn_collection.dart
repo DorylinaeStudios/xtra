@@ -1,11 +1,7 @@
 import 'xcolumn.dart';
 
 class XColumnCollection {
-  late Map<String, XColumn> _columns;
-
-  XColumnCollection() {
-    _columns = <String, XColumn>{};
-  }
+  final Map<String, XColumn> _columns = <String, XColumn>{};
 
   operator [](String columnName) {
     return _columns[columnName];

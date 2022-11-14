@@ -1,8 +1,5 @@
-import 'xtable.dart';
-import 'xcolumn.dart';
-
 class Collection<T> {
-  List<T> _collection = [];
+  final List<T> _collection = [];
 
   operator [](int index) => _collection[index];
 
@@ -21,6 +18,4 @@ class Collection<T> {
   int get length {
     return _collection.length;
   }
-
-  Collection() {}
 }

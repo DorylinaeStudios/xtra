@@ -1,11 +1,9 @@
 import 'xrow.dart';
 
 class XRowCollection {
-  late List<XRow> _rows;
+  final List<XRow> _rows = [];
 
-  XRowCollection() {
-    _rows = [];
-  }
+  int get length => _rows.length;
 
   operator [](int index) {
     return _rows[index];
@@ -14,6 +12,4 @@ class XRowCollection {
   void add(XRow row) {
     _rows.add(row);
   }
-
-  int get length => _rows.length;
 }
