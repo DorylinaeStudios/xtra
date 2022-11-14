@@ -4,6 +4,7 @@
 library xtra;
 
 export 'src/column.dart';
+export 'src/row.dart';
 export 'src/table.dart';
 export 'src/collection.dart';
 export 'src/set.dart';
