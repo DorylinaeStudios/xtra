@@ -6,5 +6,6 @@ library xtra;
 export 'src/column.dart';
 export 'src/table.dart';
 export 'src/collection.dart';
+export 'src/set.dart';
 
 // TODO: Export any libraries intended for clients of this package.
