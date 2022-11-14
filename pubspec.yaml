@@ -5,6 +5,7 @@ version: 0.2.3
 homepage: https://github.com/DorylinaeStudios/xtra
 repository: https://github.com/DorylinaeStudios/xtra
 issue_tracker: https://github.com/DorylinaeStudios/xtra/issues
+documentation: https://pub.dev/documentation/xtra/latest/
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
