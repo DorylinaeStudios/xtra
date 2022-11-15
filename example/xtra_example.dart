@@ -1,19 +1,39 @@
+import 'dart:io';
+
 import 'package:xtra/xtra.dart';
 
 void main() {
-  simple();
-}
-
-void simple() {
+  // Create XSet which will hold a collection on XTables.
   XSet xSet = XSet("MyXSet");
 
-  xSet.addXTable("MyXTable");
+  simple(xSet);
+  fromXml(xSet);
+}
 
-  xSet.xTables["MyXTable"].addXColumn("Index", int, autoInc: true);
-  xSet.xTables["MyXTable"].addXColumn("First Name", String);
-  xSet.xTables["MyXTable"].addXColumn("Last Name", String);
+void simple(XSet xSet) {
+  // Creates, links, and adds new XTable to xSet
+  xSet.addXTable("Simple");
 
-  xSet.xTables["MyXTable"].addXRow({"First Name": "John", "Last Name": "Doe"});
+  // Creates, links, and adds XColumns to xSet
+  xSet.xTables["Simple"].addXColumn("Index", int, autoInc: true);
+  xSet.xTables["Simple"].addXColumn("First Name", String);
+  xSet.xTables["Simple"].addXColumn("Last Name", String);
 
-  print(xSet.xTables["MyXTable"].xRows[0]);
+  // Adds a new row
+  xSet.xTables["Simple"].addXRow({"First Name": "John", "Last Name": "Doe"});
+
+  print(xSet.xTables["Simple"].xRows[0]); // Out: {Index: 0, First Name: John, Last Name: Doe}
+  print(xSet.xTables["Simple"].xRows[0]["First Name"]); // Out: John
+
+  print(xSet.xTables["Simple"]);
+}
+
+void fromXml(XSet xSet) {
+  xSet.addXTable("FromXml");
+
+  final String xml = File('test_data/test.xml').readAsStringSync();
+
+  xSet.xTables["FromXml"].fromXml(xml)
+
+  print()
 }

@@ -45,7 +45,7 @@ class XRow {
     }
   }
 
-  /// Converts row to string for nice output.
+  /// Converts [XRow] to string for nice output.
   @override
   String toString() {
     List<String> text = [];
