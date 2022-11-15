@@ -41,7 +41,7 @@ class XTable {
     text.add(xColumns.toString());
     text.add(xRows.toString());
 
-    return "{${text.join("\n")}";
+    return "${text.join("\n")}";
   }
 
   void fromXml(String xml) {
@@ -50,6 +50,11 @@ class XTable {
     // Add Columns
     for (String entry in data[0].keys) {
       addXColumn(entry, String);
+    }
+
+    // Add Rows
+    for (Map<String, dynamic> row in data) {
+      addXRow(row);
     }
   }
 
@@ -71,7 +76,7 @@ class XTable {
       }
       data.add(row_data);
     }
-    print(data);
+
     return data;
   }
 

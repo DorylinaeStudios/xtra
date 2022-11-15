@@ -33,7 +33,7 @@ void fromXml(XSet xSet) {
 
   final String xml = File('test_data/test.xml').readAsStringSync();
 
-  xSet.xTables["FromXml"].fromXml(xml)
+  xSet.xTables["FromXml"].fromXml(xml);
 
-  print()
+  print(xSet.xTables["FromXml"]);
 }
