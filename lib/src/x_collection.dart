@@ -4,6 +4,13 @@
 class XCollection<T> {
   /// The variable this collections data is stored in.
   final List<T> _xCollection = [];
+  List<T> get xCollection => _xCollection;
+
+  /// Type of collection in [XCollection].
+  Type get type => T;
+
+  /// Gets the amount of data entries.
+  int get length => _xCollection.length;
 
   /// Get data entry by index.
   operator [](int index) => _xCollection[index];
@@ -23,10 +30,5 @@ class XCollection<T> {
   /// Gets the last data entry.
   T last() {
     return _xCollection[_xCollection.length - 1];
-  }
-
-  /// Gets the amount of data entries.
-  int get length {
-    return _xCollection.length;
   }
 }

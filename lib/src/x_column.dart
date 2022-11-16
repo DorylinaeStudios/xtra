@@ -32,7 +32,25 @@ class XColumn<T> {
   late int _autoIncStep;
 
   /// Holds the data in this [XColumn].
-  final XCollection _xCollection = XCollection();
+  final XCollection<T> _xCollection = XCollection<T>();
+
+  /// Type of collection in [XColumn].
+  Type get type => T;
+
+  /// Gets longest entry converted to string as int
+  int get longest {
+    int _longest = 0;
+
+    for (T entry in _xCollection.xCollection) {
+      String entryString = entry.toString();
+
+      if (entryString.length > longest) {
+        _longest = entryString.length;
+      }
+    }
+
+    return _longest;
+  }
 
   /// Sets up the [XColumn].
   XColumn(
@@ -90,6 +108,65 @@ class XColumn<T> {
     return false;
   }
 
+  /// Converts [XColumn] to string for nice output.
+  @override
+  String toString() {
+    List<String> lines = [];
+
+    // Top Bar
+    lines.add("┌${"".padRight(stringLines[0].length + 2, "─")}┐");
+
+    // Headers
+    lines.add("│ ${[stringLines[0], stringLines[1]].join(" │\n│ ")} │");
+
+    if (stringLines.length > 2) {
+      // Seperator
+      lines.add("├${"".padRight(stringLines[0].length + 2, "─")}┤");
+
+      // Content
+      stringLines.removeRange(0, 1);
+      lines.add("│ ${stringLines.join(" │\n│ ")} │");
+    }
+
+    // Bottom Bar
+    lines.add("└${"".padRight(stringLines[0].length + 2, "─")}┘");
+    return lines.join("\n");
+  }
+
+  List<String> get stringLines {
+    int longest = 0;
+
+    if (xColumnName.length > longest) {
+      longest = xColumnName.length;
+    }
+
+    if ("$type".length > longest) {
+      longest = "$type".length;
+    }
+
+    for (T entry in _xCollection.xCollection) {
+      if ("$entry".length > longest) {
+        longest = "$entry".length;
+      }
+    }
+
+    List<String> outputLines = [];
+
+    int padding = longest;
+
+    // Column name
+    outputLines.add(xColumnName.padRight(padding));
+
+    // Data Type
+    outputLines.add("$type".padRight(padding));
+
+    // Content
+    for (T entry in _xCollection.xCollection) {
+      outputLines.add("$entry".padRight(padding));
+    }
+    return outputLines;
+  }
+
   /// Creates a new data entry.
   ///
   /// Sets it to [value] if [_autoInc] is false.
@@ -108,11 +185,14 @@ class XColumn<T> {
   }
 
   /// Creates a new entry which is automatically incremented
+  ///
+  /// Needs better implementation, will produce duplicates if any other than
+  /// last entry is deleted.
   void autoInc() {
     if (_xCollection.length > 0) {
-      _xCollection.add(_xCollection.last() + _autoIncStep);
+      _xCollection.add(_xCollection.length as T);
     } else {
-      _xCollection.add(_autoIncSeed);
+      _xCollection.add(_autoIncSeed as T);
     }
   }
 }

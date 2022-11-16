@@ -9,5 +9,7 @@ void main() {
   print(samples.xSet.xTables["Simple"]);
 
   samples.fromXml();
-  print(samples.xSet.xTables["FromXml"]);
+  print(samples.xSet.xTables["FromXml"].xColumns);
+
+  print(samples.xSet.xTables["FromXml"].xColumns["Species"]);
 }

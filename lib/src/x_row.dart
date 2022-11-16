@@ -51,7 +51,6 @@ class XRow {
     List<String> text = [];
     for (String columnName in _xColumns.names) {
       text.add("${this[columnName]}");
-      // text.add("$columnName: ${this[columnName]}");
     }
 
     return text.join(", ");
@@ -64,6 +63,7 @@ class XRow {
   /// ```
   operator [](String columnName) {
     XColumn column = _xColumns[columnName];
+
     return column[_record];
   }
 
