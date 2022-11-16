@@ -1,11 +1,13 @@
-import 'dart:io';
 import 'package:xtra/xtra.dart';
-import 'example/xtra_samples.dart';
+import 'xtra_samples.dart';
 
 void main() {
   // Create XSet which will hold a collection on XTables.
-  XSet xSet = XSet("MyXSet");
+  Samples samples = Samples();
 
-  simple(xSet);
-  fromXml(xSet);
+  samples.simple();
+  print(samples.xSet.xTables["Simple"]);
+
+  samples.fromXml();
+  print(samples.xSet.xTables["FromXml"]);
 }

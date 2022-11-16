@@ -1,18 +1,22 @@
-import 'package:xtra/xtra.dart';
 import 'package:test/test.dart';
-import 'xtra_samples.dart';
+import '../example/xtra_samples.dart';
 
 void main() {
   Samples samples = Samples();
+
   group('Main Tests', () {
     test('Simple', () {
+      String expected = "Jane";
+
       samples.simple();
-      print(samples.xSet["Simple"]);
+      expect(samples.xSet.xTables["Simple"].xRows[1]["First Name"], expected);
     });
 
     test('FromXml', () {
+      String expected = "Green-head Ant";
+
       samples.fromXml();
-      print(samples.xSet["FromXml"]);
+      expect(samples.xSet.xTables["FromXml"].xRows[13]["CommonName"], expected);
     });
   });
 }
