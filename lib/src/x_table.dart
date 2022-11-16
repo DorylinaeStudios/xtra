@@ -41,7 +41,7 @@ class XTable {
     text.add(xColumns.toString());
     text.add(xRows.toString());
 
-    return "${text.join("\n")}";
+    return text.join("\n");
   }
 
   void fromXml(String xml) {

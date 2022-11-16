@@ -6,7 +6,7 @@ class XRowCollection {
   /// Converts [XRowCollection] to string for nice output.
   @override
   String toString() {
-    return "${_xRows.join("\n")}";
+    return _xRows.join("\n");
   }
 
   int get length => _xRows.length;

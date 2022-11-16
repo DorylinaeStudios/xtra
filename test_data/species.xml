@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <Index>0</Index>
+    <Species>Lasius Niger</Species>
+    <CommonName>Black Garden Ant</CommonName>
+    <BaseCarbCost>10.00000</BaseCarbCost>
+    <BaseProteinCost>10.00000</BaseProteinCost>
+    <BaseGatherAmount>0.05000</BaseGatherAmount>
+    <BaseClickPower>0.04167</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>1.00000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>1</Index>
+    <Species>Lasius Flavus</Species>
+    <CommonName>Yellow Medow Ant</CommonName>
+    <BaseCarbCost>175.00000</BaseCarbCost>
+    <BaseProteinCost>175.00000</BaseProteinCost>
+    <BaseGatherAmount>0.95000</BaseGatherAmount>
+    <BaseClickPower>0.79167</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>3.00000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>2</Index>
+    <Species>Tetramorium Caespitum</Species>
+    <CommonName>Pavement Ant</CommonName>
+    <BaseCarbCost>3062.50000</BaseCarbCost>
+    <BaseProteinCost>3062.50000</BaseProteinCost>
+    <BaseGatherAmount>18.05000</BaseGatherAmount>
+    <BaseClickPower>15.04167</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>5.00000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>3</Index>
+    <Species>Crematogaster Scutellaris</Species>
+    <CommonName>Acrobat Ant</CommonName>
+    <BaseCarbCost>53593.75000</BaseCarbCost>
+    <BaseProteinCost>53593.75000</BaseProteinCost>
+    <BaseGatherAmount>342.95000</BaseGatherAmount>
+    <BaseClickPower>285.79167</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>7.50000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>4</Index>
+    <Species>Camponotus Nicobarensis</Species>
+    <CommonName>Carpenter Ant</CommonName>
+    <BaseCarbCost>937890.62500</BaseCarbCost>
+    <BaseProteinCost>937890.62500</BaseProteinCost>
+    <BaseGatherAmount>6516.05000</BaseGatherAmount>
+    <BaseClickPower>5430.04167</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>7.00000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>5</Index>
+    <Species>Pheidole Rhea</Species>
+    <CommonName>Big-headed Ant</CommonName>
+    <BaseCarbCost>16413085.93750</BaseCarbCost>
+    <BaseProteinCost>16413085.93750</BaseProteinCost>
+    <BaseGatherAmount>123804.95000</BaseGatherAmount>
+    <BaseClickPower>103170.79167</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>9.00000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>6</Index>
+    <Species>Adetomyrma Venatrix</Species>
+    <CommonName>Dracula ant</CommonName>
+    <BaseCarbCost>287229003.90625</BaseCarbCost>
+    <BaseProteinCost>287229003.90625</BaseProteinCost>
+    <BaseGatherAmount>2352294.05000</BaseGatherAmount>
+    <BaseClickPower>1960245.04167</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>11.00000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>7</Index>
+    <Species>Anoplolepis Gracilipes</Species>
+    <CommonName>Yellow Crazy Ant</CommonName>
+    <BaseCarbCost>5026507568.35938</BaseCarbCost>
+    <BaseProteinCost>5026507568.35938</BaseProteinCost>
+    <BaseGatherAmount>44693586.95000</BaseGatherAmount>
+    <BaseClickPower>37244655.79167</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>16.50000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>8</Index>
+    <Species>Solenopsis Invicta</Species>
+    <CommonName>Fire Ant</CommonName>
+    <BaseCarbCost>87963882446.28910</BaseCarbCost>
+    <BaseProteinCost>87963882446.28910</BaseProteinCost>
+    <BaseGatherAmount>849178152.05000</BaseGatherAmount>
+    <BaseClickPower>707648460.04167</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>13.00000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>9</Index>
+    <Species>Polyrhachis Ammon</Species>
+    <CommonName>Golden Tailed &apos;Spiny&apos; Ant</CommonName>
+    <BaseCarbCost>1539367942810.06000</BaseCarbCost>
+    <BaseProteinCost>1539367942810.06000</BaseProteinCost>
+    <BaseGatherAmount>16134384888.95000</BaseGatherAmount>
+    <BaseClickPower>13445320740.79170</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>15.00000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>10</Index>
+    <Species>Odontomachus Haematodus</Species>
+    <CommonName>Trap-Jaw Ant</CommonName>
+    <BaseCarbCost>26938938999176.00000</BaseCarbCost>
+    <BaseProteinCost>26938938999176.00000</BaseProteinCost>
+    <BaseGatherAmount>306553312890.05000</BaseGatherAmount>
+    <BaseClickPower>255461094075.04200</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>17.00000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>11</Index>
+    <Species>Myrmecocystus Mexicanus</Species>
+    <CommonName>Honeypot Ants</CommonName>
+    <BaseCarbCost>471431432485581.00000</BaseCarbCost>
+    <BaseProteinCost>471431432485581.00000</BaseProteinCost>
+    <BaseGatherAmount>5824512944910.95000</BaseGatherAmount>
+    <BaseClickPower>4853760787425.79000</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>25.50000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>12</Index>
+    <Species>Harpegnathos Venator</Species>
+    <CommonName>Asian Jumping Ant</CommonName>
+    <BaseCarbCost>8250050068497660.00000</BaseCarbCost>
+    <BaseProteinCost>8250050068497660.00000</BaseProteinCost>
+    <BaseGatherAmount>110665745953308.00000</BaseGatherAmount>
+    <BaseClickPower>92221454961090.10000</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>19.00000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+  <row>
+    <Index>13</Index>
+    <Species>Rhytidoponera Metallica</Species>
+    <CommonName>Green-head Ant</CommonName>
+    <BaseCarbCost>144375876198709000.00000</BaseCarbCost>
+    <BaseProteinCost>144375876198709000.00000</BaseProteinCost>
+    <BaseGatherAmount>2102649173112850.00000</BaseGatherAmount>
+    <BaseClickPower>1752207644260710.00000</BaseClickPower>
+    <BaseGatherPriority>0.50000</BaseGatherPriority>
+    <BaseGrowthTime>21.00000</BaseGrowthTime>
+    <NurseGrowthReduction>0.10000</NurseGrowthReduction>
+  </row>
+</root>

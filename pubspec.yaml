@@ -1,7 +1,7 @@
 name: xtra
 description: >-
   Some xtra useful datatypes, currently XTable and XSet, a set of XTables are usable.
-version: 0.2.6
+version: 0.3.0
 homepage: https://github.com/DorylinaeStudios/xtra
 repository: https://github.com/DorylinaeStudios/xtra
 issue_tracker: https://github.com/DorylinaeStudios/xtra/issues

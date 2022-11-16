@@ -6,7 +6,7 @@ class XColumnCollection {
   /// Converts [XColumnCollection] to string for nice output.
   @override
   String toString() {
-    return "${_xColumns.keys.join(", ")}";
+    return _xColumns.keys.join(", ");
   }
 
   operator [](String xColumnName) {

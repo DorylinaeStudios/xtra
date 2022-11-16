@@ -31,9 +31,10 @@ void simple(XSet xSet) {
 void fromXml(XSet xSet) {
   xSet.addXTable("FromXml");
 
-  final String xml = File('test_data/test.xml').readAsStringSync();
+  final String xml = File('test_data/species.xml').readAsStringSync();
 
   xSet.xTables["FromXml"].fromXml(xml);
 
   print(xSet.xTables["FromXml"]);
+  print("The base card cost is ${double.parse(xSet.xTables["FromXml"].xRows[13]["BaseCarbCost"])}");
 }
