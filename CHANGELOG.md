@@ -1,3 +1,7 @@
+## 0.3.0
+
+- Rudamentary Xml import implementation
+
 ## 0.2.6
 
 - Readme

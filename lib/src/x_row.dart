@@ -45,15 +45,16 @@ class XRow {
     }
   }
 
-  /// Converts row to string for nice output.
+  /// Converts [XRow] to string for nice output.
   @override
   String toString() {
     List<String> text = [];
     for (String columnName in _xColumns.names) {
-      text.add("$columnName: ${this[columnName]}");
+      text.add("${this[columnName]}");
+      // text.add("$columnName: ${this[columnName]}");
     }
 
-    return "{${text.join(", ")}}";
+    return text.join(", ");
   }
 
   /// Gets data value stored in [XColumn].
