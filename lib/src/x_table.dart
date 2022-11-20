@@ -5,6 +5,7 @@ import 'x_column.dart';
 import 'x_row.dart';
 import 'x_row_collection.dart';
 import 'x_set.dart';
+import './common/x_printer.dart';
 
 /// [XTable] replicates database Tables.
 class XTable {
