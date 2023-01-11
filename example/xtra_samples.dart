@@ -9,9 +9,9 @@ class Samples {
     xSet.addXTable("Simple");
 
     // Creates, links, and adds new XColumns to xTable
-    xSet.xTables["Simple"].addXColumn("Index", int, autoInc: true);
-    xSet.xTables["Simple"].addXColumn("First Name", String);
-    xSet.xTables["Simple"].addXColumn("Last Name", String);
+    xSet.xTables["Simple"].addXColumn<int>("Index", autoInc: true);
+    xSet.xTables["Simple"].addXColumn<String>("First Name");
+    xSet.xTables["Simple"].addXColumn<String>("Last Name");
 
     // Creates, links, and adds new XRows to xTable
     xSet.xTables["Simple"].addXRow({"First Name": "John", "Last Name": "Doe"});
