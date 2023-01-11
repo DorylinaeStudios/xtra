@@ -50,7 +50,7 @@ class XTable {
 
     // Add Columns
     for (String entry in data[0].keys) {
-      addXColumn(entry, String);
+      addXColumn<String>(entry);
     }
 
     // Add Rows
@@ -86,10 +86,9 @@ class XTable {
   }
 
   /// Creates a new [XColumn] for the [XTable].
-  void addXColumn(
+  void addXColumn<T>(
     // required
     String xColumnName,
-    Type type,
 
     // optional
     {
@@ -98,7 +97,7 @@ class XTable {
     int autoIncSeed = 0,
     int autoIncStep = 1,
   }) {
-    XColumn xColumn = XColumn(
+    XColumn<T> xColumn = XColumn<T>(
       this,
       xColumnName,
       autoInc: autoInc,
